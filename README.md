@@ -73,3 +73,19 @@ O binário do knex não sabe a localização das configurações da database. Pa
 ### Agora precisamos criar um comando para executar o knex usando o tsx que conhece typescript
 
 `"knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex"`
+
+### Criando a primeira migration
+No terminal vamos executar:
+````
+npm run knex -- migrate:make create-categories
+````
+Onde `create-categories` é o nome da migration
+
+Ao executar o comando acima a migration é criada na raiz do projeto. Para definir um local específico para as migrations vamos adicionar uma configuração no arquivo database 
+`````
+migrations: {
+  extension: "ts",
+  directory: "./db/migrations",
+}
+`````
+Agora é só executar o comando novamente.

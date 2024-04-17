@@ -1,6 +1,11 @@
 import fastify from "fastify";
+import { categoriesRoutes } from "./routes/categories";
 
 const app = fastify();
+// Registrar plugin
+app.register(categoriesRoutes, {
+  prefix: "categories",
+});
 
 app
   .listen({

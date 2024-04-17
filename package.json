@@ -1,0 +1,28 @@
+{
+  "name": "expenseapistudycase",
+  "version": "1.0.0",
+  "description": "Um estudo de caso para o desenvolvimento de uma api usando NodeJs com typescript para controle de despesas",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geanbrandao/ExpenseApiStudyCase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geanbrandao/ExpenseApiStudyCase/issues"
+  },
+  "homepage": "https://github.com/geanbrandao/ExpenseApiStudyCase#readme",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "fastify": "^4.26.2"
+  }
+}
